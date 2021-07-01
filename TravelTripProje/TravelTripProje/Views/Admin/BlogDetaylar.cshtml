@@ -1,0 +1,24 @@
+﻿@model TravelTripProje.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "BlogDetaylar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Blog Detaylar Sayfası</h2>
+<br />
+@Html.LabelFor(x => x.ID)
+@Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+<br />
+@Html.LabelFor(x => x.Baslik)
+@Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", @readonly = "readonly" })
+<br />
+@Html.LabelFor(x => x.Tarih)
+@Html.TextBoxFor(x => x.Tarih, new { @class = "form-control", @readonly = "readonly" })
+<br />
+@Html.LabelFor(x => x.BlogImage)
+@Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control", @readonly = "readonly" })
+<br />
+@Html.LabelFor(x => x.Aciklama)
+@Html.TextAreaFor(x => x.Aciklama, 15, 1, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<a href="/Admin/Index/" class="btn btn-primary">Geri Dön</a>

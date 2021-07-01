@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "iletisim";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<html>
+<body>
+    <div class="contact">
+        <div class="wrap">
+            <div class="contact-top">
+                <h3>İletişim Bilgileri</h3>
+                <p>Bize ulaşmak için telefon numaramızı, mail adresimizi, konumumuzu veya mesaj gönderme seçeneğinizi kullanabilirsiniz. </p>
+            </div>
+            <div class="form">
+                <form class="cmxform" method="post">
+                    <div>
+                        <input type="text" class="textbox" placeholder="Ad Soyad:" name="AdSoyad" required="">
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" placeholder="Mail:" name="Mail" required="">
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" placeholder="Konu:" name="Konu" required="">
+                    </div>
+                    <div class="form1">
+                        <textarea placeholder="Mesaj:" name="Mesaj" required=""></textarea>
+                    </div>
+                    <div>
+                        <input class="read" type="submit" value="Gönder">
+                    </div>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="contact-bottom">
+                <div class="contact-left">
+                    <div class="contact-add">
+                        <h3>Adres</h3>
+                        <p> Mustafa Kemal Mahallesi Buca/İzmir </p>
+                        <p>Telefon: +90 530 123 45 67</p>
+                        <p>Email: <a href="mailto:signup@gmail.com">signup@mail.com</a></p>
+                    </div>
+                    <div class="contact-add">
+                        <h3>İkinci Adres</h3>
+                        <p>Telefon: +90 533 123 45 67</p>
+                        <p>Fax:1-22-5555</p>
+                        <p>Email: <a href="mailto:signup@gmail.com">signup@mail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400133.6681018031!2d26.79953131931867!3d38.41734151266272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862a762cacd%3A0x628cbba1a59ce8fe!2zxLB6bWly!5e0!3m2!1str!2str!4v1623801924446!5m2!1str!2str" width="700" height="300" style="margin-bottom:30px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

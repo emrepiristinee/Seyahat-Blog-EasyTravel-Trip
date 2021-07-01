@@ -1,0 +1,30 @@
+﻿@model TravelTripProje.Models.Siniflar.BlogYorum
+@{
+    ViewBag.Title = "Yorum";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Bloğun Yorumları</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Kullanıcı</th>
+        <th>Mail</th>
+        <th>Yorum</th>
+        <th>Blog</th>
+    </tr>
+
+    @foreach (var x in Model.Deger2)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.KullaniciAdi</td>
+            <td>@x.Mail</td>
+            <td>@x.Yorum</td>
+            <td>@x.Blog.Baslik</td>
+        </tr>
+    }
+</table>
+
+<a href="/Admin/Index/" class="btn btn-primary">Geri Dön</a>

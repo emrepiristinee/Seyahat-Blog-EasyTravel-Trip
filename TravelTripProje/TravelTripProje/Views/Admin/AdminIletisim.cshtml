@@ -1,0 +1,29 @@
+﻿@using TravelTripProje.Models.Siniflar
+@{
+    ViewBag.Title = "AdminIletisim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletisim Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>AD SOYAD</th>
+        <th>MAİL</th>
+        <th>KONU</th>
+        <th>SİL</th>
+        <th>DETAYLAR</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.AdSoyad</td>
+            <td>@x.Mail</td>
+            <td>@x.Konu</td>
+            <td><a href="/Admin/IletisimSil/@x.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Admin/IletisimDetay/@x.ID" class="btn btn-success">DETAYLAR</a></td>
+        </tr>
+    }
+</table>
